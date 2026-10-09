@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8f8">
+  <meta name="description" content="100 små grunde til, at du er noget helt særligt for mig.">
+  <title>100 grunde til, at jeg elsker dig ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Til toppen">
+      <span class="brand-icon">♡</span>
+      <span>bare til dig</span>
+    </a>
+    <span class="topbar-note">lavet med kærlighed</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        EN LILLE PÅMINDELSE
+        <span class="eyebrow-line"></span>
+      </div>
+
+      <h1>100 grunde til,<br>at jeg elsker <em>dig.</em></h1>
+
+      <p class="hero-description">
+        Hvis du nogensinde glemmer, hvor fantastisk du er,
+        så er denne lille side her for at minde dig om det. ♡
+      </p>
+
+      <div class="hero-heart" aria-hidden="true">
+        <span>♥</span>
+      </div>
+
+      <a class="primary-button" href="#reasons">
+        Opdag dine 100 grunde
+        <span aria-hidden="true">↓</span>
+      </a>
+
+      <p class="hero-footnote">en lille ting fra mig til dig, med hele mit hjerte</p>
+    </section>
+
+    <section class="love-note" aria-label="En besked til dig">
+      <span class="note-decoration" aria-hidden="true">“</span>
+      <p>
+        Du behøver aldrig at være perfekt for at være
+        <em>alt det, jeg ønsker mig.</em>
+      </p>
+      <span class="note-caption">bare så du ved det ♡</span>
+    </section>
+
+    <section class="reasons-section" id="reasons">
+      <div class="section-heading">
+        <span class="section-kicker">SMÅ TING, STORE FØLELSER</span>
+        <h2>Åbn en lille <em>kærlighedsbesked.</em></h2>
+        <p>Tryk på et kort, og find ud af, hvad jeg elsker ved dig.</p>
+      </div>
+
+      <div class="progress-area">
+        <div class="progress-labels">
+          <span>Dine åbnede beskeder</span>
+          <span id="progress-text">0 / 100</span>
+        </div>
+        <div
+          class="progress-track"
+          role="progressbar"
+          aria-label="Åbnede kærlighedsbeskeder"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0"
+          id="progress-bar"
+        >
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="reasons-grid" id="reasons-grid">
+        <!-- JavaScript indsætter de 100 kort her -->
+      </div>
+
+      <div class="surprise-area">
+        <span class="surprise-sparkle" aria-hidden="true">✧</span>
+        <h3>Har du brug for en ekstra påmindelse?</h3>
+        <p>Der er altid en lille besked, der venter på dig.</p>
+        <button class="secondary-button" id="random-button" type="button">
+          Vælg en tilfældig besked ♡
+        </button>
+        <p class="random-result" id="random-result" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="final-note">
+      <div class="final-ornament" aria-hidden="true">♡ · ♡ · ♡</div>
+      <h2>Og hvis jeg skulle vælge igen?</h2>
+      <p class="final-message">
+        Så ville jeg stadig vælge dig.<br>
+        Igen og igen og igen.
+      </p>
+      <div class="signature">
+        med al min kærlighed,
+        <span>din person ♡</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>lavet til dig, og kun dig</span>
+    <span aria-hidden="true">♥</span>
+    <span>altid lidt mere end ord kan sige</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
